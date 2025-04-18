@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import { GiBookshelf } from "react-icons/gi";
-import { IoCalendarOutline } from "react-icons/io5";
-import { HiOutlineDocumentReport } from "react-icons/hi";
-import { AiOutlineSchedule } from "react-icons/ai";
 import { BiBookAdd } from "react-icons/bi";
 import { RiUserAddLine } from "react-icons/ri";
 import { PiBooks, PiUser, PiStudent } from "react-icons/pi";
@@ -36,45 +33,6 @@ const Dash = () => {
             Papers
             <p className="text-sm font-normal lg:text-base ">
               View Papers and Notes
-            </p>
-          </div>
-        </Link>
-
-        <Link
-          className="flex gap-2 rounded-lg bg-violet-300 p-6 text-base hover:bg-violet-400/90 dark:bg-violet-950/80 dark:hover:bg-violet-950 dark:hover:text-slate-300 duration-200 lg:text-lg"
-          to={"./attendance"}
-        >
-          <IoCalendarOutline className="text-[2.5rem] lg:text-[4rem] " />
-          <div className="font-semibold">
-            Attendance
-            <p className="text-sm font-normal lg:text-base ">
-              Add or Edit Attendance
-            </p>
-          </div>
-        </Link>
-
-        <Link
-          className="flex gap-2 rounded-lg bg-violet-300 p-6 text-base hover:bg-violet-400/90 dark:bg-violet-950/80 dark:hover:bg-violet-950 dark:hover:text-slate-300 duration-200 lg:text-lg"
-          to={"./internal"}
-        >
-          <HiOutlineDocumentReport className="text-[2.5rem] lg:text-[4rem] " />
-          <div className="font-semibold">
-            Internal Mark
-            <p className="text-sm font-normal lg:text-base ">
-              View or Edit Internal Marks
-            </p>
-          </div>
-        </Link>
-
-        <Link
-          className="flex gap-2 rounded-lg bg-violet-300 p-6 text-base hover:bg-violet-400/90 dark:bg-violet-950/80 dark:hover:bg-violet-950 dark:hover:text-slate-300 duration-200 lg:text-lg"
-          to={"./time_schedule"}
-        >
-          <AiOutlineSchedule className="text-[2.5rem] lg:text-[4rem] " />
-          <div className="font-semibold">
-            Time Schedule
-            <p className="text-sm font-normal lg:text-base ">
-              View or Edit Time Schedule
             </p>
           </div>
         </Link>
