@@ -2,9 +2,6 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "../../Hooks/UserContext";
 import { GiBookshelf } from "react-icons/gi";
-import { IoCalendarOutline } from "react-icons/io5";
-import { HiOutlineDocumentReport } from "react-icons/hi";
-import { AiOutlineSchedule } from "react-icons/ai";
 import { BiBookAdd } from "react-icons/bi";
 import { RiUserAddLine } from "react-icons/ri";
 import { PiStudent, PiUser, PiBooks } from "react-icons/pi";
@@ -23,24 +20,7 @@ const Nav = () => {
             Papers
           </li>
         </NavLink>
-        <NavLink to={"./attendance"} className="w-full font-medium">
-          <li className="flex gap-2 duration-200 rounded-md px-4 py-2 hover:bg-violet-600/40 ">
-            <IoCalendarOutline className="pt-[0.1rem] text-2xl  " />
-            Attendance
-          </li>
-        </NavLink>
-        <NavLink to={"./internal"} className="w-full font-medium">
-          <li className="flex gap-2 duration-200 rounded-md px-4 py-2 hover:bg-violet-600/40 ">
-            <HiOutlineDocumentReport className="pt-[0.1rem] text-2xl  " />
-            Internal Mark
-          </li>
-        </NavLink>
-        <NavLink to={"./time_schedule"} className="w-full font-medium">
-          <li className="flex gap-2 duration-200 rounded-md px-4 py-2 hover:bg-violet-600/40 ">
-            <AiOutlineSchedule className="pt-[0.1rem] text-2xl  " />
-            Time Schedule
-          </li>
-        </NavLink>
+       
         {user.role === "HOD" && (
           <>
             <NavLink to={"./add_paper"} className="w-full font-medium">
