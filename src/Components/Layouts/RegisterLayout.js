@@ -1,6 +1,5 @@
 import React from "react";
 import CircleDesign from "./CircleDesign";
-import { FaUniversity } from "react-icons/fa";
 import { PiStudentThin, PiUserThin } from "react-icons/pi";
 import { NavLink, Link, Outlet, useLocation } from "react-router-dom";
 
@@ -34,12 +33,10 @@ const RegisterLayout = () => {
               className="flex items-center font-spectral text-xl font-semibold text-slate-900 dark:text-slate-50"
               to="../"
             >
-              <FaUniversity />
+              <img src="/npsk.svg" alt="Logo" height="125" width="125" />
               <p className="decoration-violet-900 decoration-2 hover:underline dark:decoration-violet-300">
-                K
-                <span className=" inline-block h-3 w-3 rounded-full bg-violet-900 dark:bg-violet-500 "></span>
-                llege
-              </p>
+                NPSK
+              </p>             
             </Link>
           </div>
         </div>
