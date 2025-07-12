@@ -11,7 +11,7 @@ const PaperForm = () => {
   const [newPaper, setNewPaper] = useState({
     department: user.department,
     paper: "",
-    year: "2023",
+    year: new Date().getFullYear().toString(),
     students: [],
     semester: "Select Semester",
     teacher: "",
